@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clrP-cyan: hsl(179, 62%, 43%);
+    --clrP-BrightYellow: hsl(71, 73%, 54%);
+    --clrN-LightGray: hsl(204, 43%, 93%);
+    --clrN-GrayishBlue: hsl(218, 22%, 67%);
+    --ff-Karla: 'Karla', sans-serif;
+    --fw-m: 400;
+    --fw-b: 700;
+}
+body {
+    background-color: var(--clrN-LightGray);
+    font-family: var(--ff-Karla);
+    font-size: 0.9375rem;
+    color: var(--clrN-GrayishBlue);
+    line-height: 1.2rem;
+    padding-top: 5rem;
+}
+div a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h2 {
+    font-weight: var(--fw-b);
+    margin-bottom: 1em;
+    color: var(--clrN-LightGray);
+    opacity: 1;
+
+}
+.card1 h2 {
+    color: var(--clrP-cyan);
+}
+h3 {
+    margin-bottom: 1em;
+    color: var(--clrP-cyan);
+}
+.btn {
+    display: block;
+    background-color: var(--clrP-BrightYellow);
+    max-width: 100%;
+    margin: 1em 0;
+    padding: 0.8rem;
+    color:#fff;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0,0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.card1 h3 {
+    color: var(--clrP-BrightYellow);
+}
+.card2 h3 {
+    color: var(--clrN-GrayishBlue);
+    font-size: 1rem;
+}
+span {
+    font-weight: var(--fw-b);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.grid-container {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px ;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2em auto;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0, 0, 0.5);
+}
+.card {
+    width: 100%;
+    padding: 2em;
+
+}
+.card1 {
+    background-color: #fff;
+    color: var(--clrN-GrayishBlue);
+}
+.card2 {
+    background-color: var(--clrP-cyan);
+}
+.card2 p {
+    color: #fff;
+}
+.card3 {
+    background-color: hsla(179, 62%, 43%, 0.1);
+    border-radius: 5px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+    .card1 {
+        grid-column: 1 / 3;
+    }
+    .card2 {
+        grid-column: 1/2;
+    }
+    .card3 {
+        grid-column: 2/2;
+    }
+    .btn {
+        max-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
